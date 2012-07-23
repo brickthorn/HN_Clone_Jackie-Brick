@@ -1,2 +1,14 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+<h1>JackerNews</h1>
+
+<%= link_to "Submit New", new_article_path %> 
+
+<p>
+<table>
+<% Article.all.each_with_index do |article, i| %>
+    <tr>
+      <td> <%= i+1 %>. </td>
+      <td> <a href ="<%= article.url %>"><%= article.title %></a></td>
+    </tr>
+<% end %>
+</table>    
+</p>

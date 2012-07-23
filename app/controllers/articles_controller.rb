@@ -1,13 +1,27 @@
 class ArticlesController < ApplicationController
   def index
+    
   end
 
   def create
-    @article = Article.create(:title => params[:url], :url => params[:url])
-    # redirect_to => "www.google.com"
-    # redirect_to => @article.url
-    # redirect_to => articles_path
+    url = params[:url] 
+    url = "http://" + url if !url.include?("http://") if url != ""
+    @article = Article.new(:title => params[:title], :url => url)
+    if @article.save
+      redirect_to articles_path
+    else 
+      @article.errors.messages.first.name
+      flash[:alert] = "Invalid Url or Title. Try again!"
+      render "new"
+    end
   end
+  
+  # def multiple_article_test(url)
+  #   Article.all.each do |article|
+  #     return true if article.url == url
+  #   end
+  #   return false
+  # end
 
   def show
   end

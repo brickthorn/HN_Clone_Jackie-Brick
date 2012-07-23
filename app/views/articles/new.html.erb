@@ -1,7 +1,14 @@
 <h1>JackerNews</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
+<p>Add Your Article!</p>
+
+<% if flash.alert %>
+  <%= flash.alert %>
+<% end %>
+
 
 <form action="/articles" method="post">
-  Enter Article URL: <input type="text" name="url" /><br />
+  Title: <input type="text" name="title" /><br />
+  URL: <input type="text" name="url" /><br />
   <input type="submit" value="Submit" />
 </form>
+
