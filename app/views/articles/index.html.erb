@@ -1,6 +1,8 @@
 <h1>JackerNews</h1>
 
 <%= link_to "Submit New", new_article_path %> 
+<%= link_to "Login", new_user_session_path %> 
+<%= link_to "Logout", "/user_session/logout", :method => :delete %>
 
 <p>
 <table>

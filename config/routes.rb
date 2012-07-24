@@ -2,7 +2,9 @@ JackieBrick::Application.routes.draw do
 
 root :to => "articles#index"
 
-resources :articles
+match "/user_session/logout" => "user_sessions#destroy"
+
+resources :articles, :users, :user_sessions
 
 
 
