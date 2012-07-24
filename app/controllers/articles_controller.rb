@@ -1,12 +1,14 @@
 class ArticlesController < ApplicationController
+
   def index
-    
+
   end
-  
+
   def new
     @article = Article.new
   end
-  
+
+
   def create
     url = params[:article][:url]
     url = "http://" + url if !url.include?("http://") if url != ""
@@ -19,13 +21,6 @@ class ArticlesController < ApplicationController
     # @article.save ? redirect_to(articles_path) : render "new"
   end
 
-
-  # def multiple_article_test(url)
-  #   Article.all.each do |article|
-  #     return true if article.url == url
-  #   end
-  #   return false
-  # end
 
   def show
   end
