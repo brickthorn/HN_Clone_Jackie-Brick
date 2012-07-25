@@ -1,16 +1,13 @@
 <h1>JackerNews</h1>
 
-<%= link_to "Submit New", new_article_path %> 
-<%= link_to "Login", new_user_session_path %> 
-<%= link_to "Logout", "/user_session/logout", :method => :delete %>
-
 <p>
 <table>
 <% Article.all.each_with_index do |article, i| %>
     <tr>
       <td> <%= i+1 %>. </td>
       <td> <a href ="<%= article.url %>"><%= article.title %></a></td>
+      <td> <%= link_to 'Edit', "articles/#{article.id}/edit" %>
     </tr>
 <% end %>
-</table>    
+</table>
 </p>

@@ -7,8 +7,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(:name => params[:user][:name], :email => params[:user][:email], :password => params[:user][:password])
+    @user = User.new(params[:user])
     if @user.save
+      flash[:success] = "Welcome to JackerNews!"
       redirect_to articles_path  # need to redirect to user_session_new page
     else
       render "new"         # go back to the signup page and display errors
@@ -16,9 +17,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    redirect_to "/404.html"
+    @user = User.find(params[:id])
   end
-  
+
   def edit
   end
 

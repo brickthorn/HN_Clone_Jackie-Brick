@@ -11,8 +11,9 @@ class ArticlesController < ApplicationController
 
   def create
     url = params[:article][:url]
+    @current_user = current_user
     url = "http://" + url if !url.include?("http://") if url != ""
-    @article = Article.new(:title => params[:article][:title], :url => url)
+    @article = Article.new(:title => params[:article][:title], :url => url, :owner_id => @current_user.id)
     if @article.save
       redirect_to articles_path
     else
@@ -26,4 +27,21 @@ class ArticlesController < ApplicationController
   end
 
 
+  def edit
+    @article = Article.find(params[:id])
+  end
+
+
+  def update
+    @article = Article.find(params[:id])
+    @article.title = params[:article][:title]
+    @article.url = params[:article][:url]
+    if @article.save
+      redirect_to articles_path
+    else
+      render "new"
+    end
+  end
 end
+
+

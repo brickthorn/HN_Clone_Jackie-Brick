@@ -2,13 +2,14 @@ JackieBrick::Application.routes.draw do
 
 root :to => "articles#index"
 
-match '/logout' => 'user_sessions#destroy'
-
 match '/signup' => 'users#new'
+match '/signin' => 'sessions#new'
+match '/signout', to: 'sessions#destroy', via: :delete
 
 # match '/signup', to: 'users#new'  ?????
 
-resources :articles, :users, :user_sessions
+resources :articles, :users
+resources :sessions, only: [:new, :create, :destroy]
 
 
 
