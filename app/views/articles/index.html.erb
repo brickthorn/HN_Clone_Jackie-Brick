@@ -2,12 +2,15 @@
 
 <p>
 <table>
-<% Article.all.each_with_index do |article, i| %>
-    <tr>
-      <td> <%= i+1 %>. </td>
+<% @articles.each_with_index do |article, i| %>
+      <tr><td> <%= i+1 %>. </td>
       <td> <a href ="<%= article.url %>"><%= article.title %></a></td>
-      <td> <%= link_to 'Edit', "articles/#{article.id}/edit" %>
-    </tr>
+       <% if current_user == article.owner && article.recent? %>
+            <td> <%= link_to 'Edit', "articles/#{article.id}/edit" %> </td>
+       <% end %>
+       </tr>
 <% end %>
 </table>
 </p>
+
+

@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120724232747) do
+ActiveRecord::Schema.define(:version => 20120725223157) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
     t.string   "url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.string   "owner_id"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.integer  "owner_id",   :limit => 255
   end
 
   create_table "users", :force => true do |t|

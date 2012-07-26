@@ -4,5 +4,10 @@ class Article < ActiveRecord::Base
   validates_presence_of :title, :url
   validates_uniqueness_of :url
 
-  belongs_to :user
+  belongs_to :owner, :class_name => "User"
+
+  def recent?
+    self.created_at > (Time.zone.now - 900)
+  end
+
 end
