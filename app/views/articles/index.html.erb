@@ -2,14 +2,27 @@
 
 <p>
 <table>
+
+<!-- ADD THE ACTIVE RECORD QUERY TO GENERATE LIST OF ARTICLES IN ORDER BY COUNT -->
+
 <% @articles.each_with_index do |article, i| %>
       <tr><td> <%= i+1 %>. </td>
       <td> <a href ="<%= article.url %>"><%= article.title %></a></td>
+
        <% if current_user == article.owner && article.recent? %>
             <td> <%= link_to 'Edit', "articles/#{article.id}/edit" %> </td>
        <% end %>
+
+      <!-- IF THE CURRENT USER OWNS THE CURRENT ARTICLE OR THEY HAVE VOTED ON THE POSTING ALREADY, DON'T SHOE VOTE LINK-->
+       <% if current_user != article.owner && (Vote.where(:user_id => current_user, :posting_id => article.id)).empty?  %>
+              <td><%= link_to 'Vote', "votes/create?posting_id=#{article.id}" %> </td>
+    <%   end %>
+
        </tr>
 <% end %>
+
+
+
 </table>
 </p>
 

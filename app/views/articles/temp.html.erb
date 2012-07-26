@@ -1,0 +1,19 @@
+
+
+<!-- SEE IF THE ARTICLE HAS BEEN VOTED ON, DON'T SHOW THE EDIT LINK -->
+ <% vote_match = Vote.where(:user_id => current_user, :posting_id => article.id)  %>
+ <% puts vote_match.inspect %>
+ <% puts " --------------------- "  %>
+
+ <% if vote_match.empty? %>
+
+
+ <% # user_vote_matches = Vote.where(:user_id => current_user, :posting_id => article.id)  %>
+ <%  already_voted = false %>
+ <%  user_vote_matches.each do |vote| %>
+   <%  if vote.posting_id == article.id %>
+   <%    already_voted = true              %>
+   <%    break                          %>
+   <%  end                              %>
+<%   end %>
+

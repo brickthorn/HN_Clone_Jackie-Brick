@@ -1,0 +1,500 @@
+   12  ls
+   13  cd Oleg/
+   14  mkdir ConwaysGame
+   15  cd ConwaysGame/
+   16  mate conwaysGameOfLife.rb
+   17  mate conwaysGameOfLife_spec.rb
+   18  rspec conwaysGameOfLife_spec.rb
+   19  rspec conwaysGameOfLife_spec.rb -c
+   20  mate .rspec
+   21  rspec conwaysGameOfLife_spec.rb
+   22  rspec conwaysGameOfLife_spec.rb
+   23  rspec conwaysGameOfLife_spec.rb
+   24  rspec conwaysGameOfLife_spec.rb
+   25  rspec conwaysGameOfLife_spec.rb
+   26  rspec conwaysGameOfLife_spec.rb
+   27  rspec conwaysGameOfLife_spec.rb
+   28  rspec conwaysGameOfLife_spec.rb
+   29  rspec conwaysGameOfLife_spec.rb
+   30  rspec conwaysGameOfLife_spec.rb
+   31  ruby conwaysGameOfLife.rb
+   32  ruby conwaysGameOfLife.rb
+   33  ruby conwaysGameOfLife.rb
+   34  ruby conwaysGameOfLife.rb
+   35  ruby conwaysGameOfLife.rb
+   36  ruby conwaysGameOfLife.rb
+   37  ruby conwaysGameOfLife.rb
+   38  clear
+   39  rspec conwaysGameOfLife_spec.rb 
+   40  rspec conwaysGameOfLife_spec.rb 
+   41  rspec conwaysGameOfLife_spec.rb 
+   42  rspec conwaysGameOfLife_spec.rb 
+   43  rspec conwaysGameOfLife_spec.rb 
+   44  rspec conwaysGameOfLife_spec.rb 
+   45  rspec conwaysGameOfLife_spec.rb 
+   46  rspec conwaysGameOfLife_spec.rb 
+   47  rspec conwaysGameOfLife_spec.rb 
+   48  rspec conwaysGameOfLife_spec.rb 
+   49  rspec conwaysGameOfLife_spec.rb 
+   50  rspec conwaysGameOfLife_spec.rb 
+   51  rspec conwaysGameOfLife_spec.rb 
+   52  rspec conwaysGameOfLife_spec.rb 
+   53  rspec conwaysGameOfLife_spec.rb 
+   54  rspec conwaysGameOfLife_spec.rb 
+   55  rspec conwaysGameOfLife_spec.rb 
+   56  rspec conwaysGameOfLife_spec.rb 
+   57  rspec conwaysGameOfLife_spec.rb 
+   58  rspec conwaysGameOfLife_spec.rb 
+   59  rspec conwaysGameOfLife_spec.rb 
+   60  rspec conwaysGameOfLife_spec.rb 
+   61  rspec conwaysGameOfLife_spec.rb 
+   62  rspec conwaysGameOfLife_spec.rb 
+   63  ls
+   64  mate .
+   65  cd ..
+   66  ls
+   67  cd ~
+   68  cd Desktop/
+   69  mkdir conway
+   70  git init
+   71  mate cell_spec.rb
+   72  ls
+   73  ls -a
+   74  rm .git
+   75  rm -r .git
+   76  cd conway/
+   77  git init
+   78  cd ..
+   79  cd conway/
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd conway/
+   84  mate cell_spec.rb
+   85  rspec .
+   86  rspec .
+   87  git commmit 
+   88  git commit
+   89  git add .
+   90  git commit -m '1st'
+   91  mate ~/.rspec
+   92  rspec .
+   93  rspec .
+   94  rspec .
+   95  rspec .
+   96  git commit -m '2nd'
+   97  git add .
+   98  git commit -m'2nd'
+   99  git checkout .
+  100  git checkout .
+  101  mate .
+  102  rspec .
+  103  rspec .
+  104  rspec .
+  105  git commit -m'3rd'
+  106  git add .
+  107  git commit -m'3rd'
+  108  rspec .
+  109  rspec .
+  110  rspec .
+  111  rspec .
+  112  git add .
+  113  git commit
+  114  git history
+  115  git hist
+  116  rspec .
+  117  rspec .
+  118  git add .
+  119  git commit -m'5th-refactor'
+  120  git checkout .
+  121  git checkout .
+  122  rspec .
+  123  rspec .
+  124  git add .
+  125  git commmit -m "6th commit"
+  126  git commit -m "6th commit"
+  127  git commit -m "6th commit"
+  128  rspec .
+  129  rspec .
+  130  rspec .
+  131  git add .
+  132  rspec .
+  133  rspec .
+  134  rspec .
+  135  git add .
+  136  git commmit -m "7th commit"
+  137  git commit -m "7th commit"
+  138  git commit -m "7th commit"
+  139  rspec .
+  140  rspec .
+  141  rm -rf .git
+  142  ls
+  143  rm .
+  144  rm *
+  145  ls
+  146  mkdir final
+  147  cd final
+  148  mate .
+  149  rspec coordinate_spec.rb --color
+  150  rspec coordinate_spec.rb --color
+  151  rspec coordinate_spec.rb --color
+  152  rspec coordinate_spec.rb --color
+  153  rspec coordinate_spec.rb --color
+  154  rspec coordinate_spec.rb --color
+  155  rspec coordinate_spec.rb --color
+  156  rspec cell_spec.rb --color
+  157  rspec cell_spec.rb --color
+  158  rspec cell_spec.rb --color
+  159  rspec cell_spec.rb --color
+  160  rspec cell_spec.rb --color
+  161  rspec cell_spec.rb --color
+  162  rspec cell_spec.rb --color
+  163  cd
+  164  heroku keys
+  165  gem install heroku
+  166  heroku keys
+  167  cd ..
+  168  rails new whatever
+  169  cd whatever
+  170  rails g scaffold Cookie name:string
+  171  mate .
+  172  history
+  173  rails db
+  174  ls
+  175  irb
+  176  gem list
+  177  ls
+  178  cd Desktop/
+  179  ls
+  180  mkdir Jackie_Brick
+  181  ls
+  182  cd Jackie_Brick/
+  183  ls
+  184  git clone https://github.com/brickthorn/HN_Clone_Jackie-Brick.git
+  185  ls
+  186  cd HN_Clone_Jackie-Brick/
+  187  ks
+  188  ls
+  189  mate .
+  190  git clone https://github.com/brickthorn/HN_Clone_Jackie-Brick.git
+  191  bundle
+  192  mate .
+  193  ls
+  194  mv HN_Clone_Jackie-Brick/ ..
+  195  ls
+  196  mv HN_Clone_Jackie-Brick/ ../../
+  197  cd ..
+  198  ls
+  199  rm -rf HN_Clone_Jackie-Brick/
+  200  ls
+  201  cd ../HN_Clone_Jackie-Brick/ .
+  202  cd ..
+  203  ls
+  204  mv HN_Clone_Jackie-Brick/ Jackie_Brick/
+  205  ls
+  206  cd Jackie_Brick/
+  207  ls
+  208  cd HN_Clone_Jackie-Brick/
+  209  ls
+  210  ls
+  211  mate .
+  212  bundle install
+  213  rails generate migration add_password_digest_to_users password_digest:string
+  214  ls
+  215  rake db:migrate
+  216  rails generate migration RemovePasswordFromUsers password:string
+  217  rails db:migrate
+  218  rake db:migrate
+  219  bundle install
+  220  rake db:migrate
+  221  git add .
+  222  ls
+  223  git commit -m "added password_digest"
+  224  ls
+  225  vi Gemfile
+  226  rake db:reset
+  227  rake db:reset
+  228  rails generate controller Sessions
+  229  rake db:routes
+  230  rake routes
+  231  rake routes
+  232  history
+  233  rake routes
+  234  rails generate migration add_remember_token_to_users
+  235  rake db:migrate
+  236  ls
+  237  ls
+  238  history
+  239  rake db:migrate
+  240  rake db:schema:reload
+  241  rake db:schema:load
+  242  rake db:reset
+  243  rake db:migrate
+  244  ls
+  245  history
+  246  rails generate migration add_remember_token_to_users
+  247  rails generate migration add_remember_token_to_users
+  248  ls
+  249  rails db:migrate
+  250  rake db:migrate
+  251  hist
+  252  history
+  253  rails generate migration add_owner_id_to_articles owner_id:string
+  254  rake db:migrate
+  255  rake routes
+  256  mate .
+  257  ls
+  258  vi .git/config 
+  259  ls
+  260  mate .
+  261  ls
+  262  cd ..
+  263  ls
+  264  cd ..
+  265  ls
+  266  cd Put\ Your\ Toys\ Away/
+  267  ls
+  268  mkdir brick_test
+  269  ls
+  270  cd brick_test/
+  271  ls
+  272  git clone git://github.com/Devbootcamp/blogger.git
+  273  rake db:migrate
+  274  ls
+  275  cd blogger/
+  276  ls
+  277  rake db:migrate
+  278  bundle
+  279  mate .
+  280  ls
+  281  rake db:migrate
+  282  ls
+  283  vi Gemfile
+  284  ls
+  285  bundle
+  286  ls
+  287  rake db:migrate
+  288  ls
+  289  git add .
+  290  git add .
+  291  git init .
+  292  git add .
+  293  git commit -m "changed the controller for articles NOT using mass assignment"
+  294  git push 
+  295  git push origin master git@github.com:Devbootcamp/blogger.git
+  296  ls
+  297  git add origin master https://github.com/brickthorn/JSblogger_Clone_Tutorial.git
+  298  git remote add origin https://github.com/brickthorn/JSblogger_Clone_Tutorial.git
+  299  git remote
+  300  rit remote origin
+  301  git remote origin
+  302  ls
+  303  git push origin master
+  304  cd .git
+  305  ls
+  306  vi config 
+  307  ls
+  308  git push origin master
+  309  vi config 
+  310  cd ..
+  311  ls
+  312  git push origin master
+  313  ls
+  314  ls
+  315  git status
+  316  ls
+  317  rm .git
+  318  rm -rf .git
+  319  ls
+  320  git add .
+  321  git init
+  322  git add .
+  323  git history
+  324  history
+  325  git remote add origin https://github.com/brickthorn/JSblogger_Clone_Tutorial.git
+  326  git commit -m "set each value individually instead of mass setting"
+  327  ls
+  328  git push origin master
+  329  rails console
+  330  rake routes
+  331  ls
+  332  rails generate migration add_word_count_to_articles word_count:integer
+  333  rake db:migrate
+  334  rails db
+  335  ls
+  336  rails console
+  337  ls
+  338  ls
+  339  ls
+  340  git add .
+  341  git commit -m "ordered by wordcount"
+  342  git push
+  343  ls
+  344  ls
+  345  cd .git
+  346  ls
+  347  vi config
+  348  cd ..
+  349  ls
+  350  cd ..
+  351  ls
+  352  cd ..
+  353  ls
+  354  exit
+  355  ls
+  356  rails console
+  357  ls
+  358  rails console
+  359  ls
+  360  ls
+  361  cd ..
+  362  ls
+  363  cd HN_Clone_Jackie-Brick/
+  364  ls
+  365  rails console
+  366  rails console
+  367  ls
+  368  ls
+  369  cd ..
+  370  ls
+  371  cd blogger
+  372  ls
+  373  rails s
+  374  rails s
+  375  rails s
+  376  rails s
+  377  rails s
+  378  rails s
+  379  rails s
+  380  rails db
+  381  ps
+  382  jobs
+  383  jobs ps
+  384  jobs -ps
+  385  kill 93515
+  386  ls
+  387  jobs
+  388  ls
+  389  rake db:migrate
+  390  ls
+  391  bundle 
+  392  ls
+  393  rails s
+  394  rails s
+  395  ls
+  396  cd ..
+  397  ls
+  398  cd HN_Clone_Jackie-Brick/
+  399  ls
+  400  bundle
+  401  rake db:migrate
+  402  ls
+  403  rails s'
+  404  rails s
+  405  rails s
+  406  rails s
+  407  rails s
+  408  rails s
+  409  rails s
+  410  ls
+  411  git add .
+  412  git commit -m "making sure we've committed all"
+  413  git push
+  414  ls
+  415  cd .git/
+  416  ls
+  417  vi config 
+  418  ls
+  419  vi config
+  420  cd ..
+  421  lks
+  422  ls
+  423  ls
+  424  git status
+  425  git rm app/controllers/user_sessions_controller.rb
+  426  git rm app/helpers/user_sessions_helper.rb
+  427  git rm app/views/user_sessions/create.html.erb
+  428  git rm app/views/user_sessions/destroy.html.erb
+  429  git rm app/views/user_sessions/new.html.erb
+  430  git rm app/views/user_sessions/show.html.erb
+  431  git add .
+  432  git commit -m "deleted files"
+  433  git status
+  434  git push origin master
+  435  ls
+  436  ls
+  437  irb
+  438  ls
+  439  exit
+  440  rails c
+  441  ls
+  442  cd ..
+  443  ls
+  444  mkdir validations_tutorial
+  445  ls
+  446  cd validations_tutorial/
+  447  ls
+  448  rails g new .
+  449  rails new .
+  450  ls
+  451  rake migrate:db
+  452  rake db:migragte
+  453  rake db:migrate
+  454  ls
+  455  rails g model product title:string price:decimal description:string imageurl:string size:string
+  456  ls
+  457  rails console
+  458  ls
+  459  rake db:migrate
+  460  ls
+  461  exit
+  462  ls
+  463  ps
+  464  ls
+  465  ls
+  466  ls
+  467  cd Desktop/
+  468  ls
+  469  cd Put\ Your\ Toys\ Away/
+  470  ls
+  471  cd brick_test/
+  472  ls
+  473  cd blogger/q
+  474  cd blogger/
+  475  ls
+  476  mate .
+  477  rake routes
+  478  history
+  479  rails c
+  480  ls
+  481  git add .
+  482  git commit -m "params"
+  483  git push origin master
+  484  git push origin master
+  485  ls
+  486  rake routes
+  487  ls
+  488  cd ..
+  489  ls
+  490  cd ..
+  491  ls
+  492  mv brick_test/ ../../Dropbox/Brick/Week_7
+  493  cd ..
+  494  ls
+  495  cd Jackie_Brick/
+  496  ls
+  497  cd HN_Clone_Jackie-Brick/
+  498  ls
+  499  mate .
+  500  rails generate migration change_owner_id_to_integer 
+  501  rake db_migrate
+  502  rake db:migrate
+  503  ls
+  504  git add .
+  505  git commit -m "editing validations and user accounts finished"
+  506  git push
+  507  ls
+  508  rails generate model Vote user_id:integer posting_id:integer posting_type:string 
+  509  rake db:migrate
+  510  history
+  511  history > history.txt
