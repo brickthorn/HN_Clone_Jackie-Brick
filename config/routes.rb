@@ -1,24 +1,23 @@
 JackieBrick::Application.routes.draw do
 
-
+root :to => "articles#index"
 
   resources :votes, :only => [:new, :create]
-
-root :to => "articles#index"
 
 match '/signup' => 'users#new'
 match '/signin' => 'sessions#new'
 match '/signout', to: 'sessions#destroy', via: :delete
 
-# match '/signup', to: 'users#new'  ?????
+match '/articles/:posting_id/vote', to: 'votes#create'
 
   resources :articles do
     member do
       post 'vote'
     end
   end
+
   resources :users
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :sessions, :only => [:new, :create, :destroy]
 
 
 
