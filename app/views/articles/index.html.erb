@@ -7,7 +7,7 @@
 
 <% @articles.each_with_index do |article, i| %>
       <tr><td> <%= i+1 %>. </td>
-      <td> <a href ="<%= article.url %>"><%= article.title %></a></td>
+      <td> <%= link_to article.title, article.url %></td>
        <% if current_user == article.owner %>
             <td> <%= link_to 'Edit', edit_article_path(article) if article.recent? %> </td>
           <!-- IF THE CURRENT USER IS NIL OR HAS VOTED ON THE POSTING ALREADY, DON'T SHOW VOTE LINK-->

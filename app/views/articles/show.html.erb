@@ -1,5 +1,5 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<h1>Article</h1>
+<h2><%= link_to @article.title, @article.url %></h2>
 
 
 <%= form_for([@article, @comment]) do |f| %>
@@ -23,3 +23,9 @@
     <%= f.submit %>
   </div>
 <% end %>
+
+<ul>
+<% @article.comments.each do |comment| %>
+  <li><%= comment.body %></li>
+<% end %>
+</ul>

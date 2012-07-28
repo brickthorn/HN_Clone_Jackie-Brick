@@ -6,6 +6,7 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'quiet_assets'
 gem 'thin'
 
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
