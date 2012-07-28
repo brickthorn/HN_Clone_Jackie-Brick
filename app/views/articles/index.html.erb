@@ -9,15 +9,13 @@
       <tr><td> <%= i+1 %>. </td>
       <td> <a href ="<%= article.url %>"><%= article.title %></a></td>
        <% if current_user == article.owner %>
-            <td> <%= link_to 'Edit', "/articles/#{article.id}/edit" if article.recent? %> </td>
-      <!-- IF THE CURRENT USER IS NIL OR HAS VOTED ON THE POSTING ALREADY, DON'T SHOW VOTE LINK-->
+            <td> <%= link_to 'Edit', edit_article_path(article) if article.recent? %> </td>
+          <!-- IF THE CURRENT USER IS NIL OR HAS VOTED ON THE POSTING ALREADY, DON'T SHOW VOTE LINK-->
        <% elsif current_user != nil && (Vote.where(:user_id => current_user, :posting_id => article.id)).empty?  %>
-              <td><%= link_to 'Vote', "/articles/#{article.id}/vote" %> </td>
-              <!-- previously used: votes/create?posting_id=#{article.id}  # didn't need :method => :post -->
-
-
-    <%   end %>
+            <td><%= link_to 'Vote', vote_article_path(article) %></td>
+       <% end %>
           <td> <%=  article.vote_count  %> </td>
+          <td> <%=  link_to 'Comment', article_path(article) %> </td>
        </tr>
 <% end %>
 

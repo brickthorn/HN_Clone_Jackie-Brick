@@ -44,6 +44,8 @@ class ArticlesController < ApplicationController
 
 
   def show
+    @article = Article.find(params[:id])
+    @comment = Comment.new
   end
 
 
@@ -63,6 +65,7 @@ class ArticlesController < ApplicationController
       render "new"
     end
   end
+
 end
 
 
