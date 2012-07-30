@@ -26,6 +26,7 @@
 
 <ul>
 <% @article.comments.each do |comment| %>
-  <li><%= comment.body %></li>
+  <li><%= comment.body %> <br />
+  by <i><%= current_user.name %></i> on <%= comment.created_at.strftime("%I:%M%p %B %d, %Y")%> </li>
 <% end %>
 </ul>
